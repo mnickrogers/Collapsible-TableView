@@ -23,3 +23,4 @@ tableViewModel.reloadSection = { [weak self] (section) in
   self?.tableView?.endUpdates()
 }
 ```
+Note: Be sure to use a weak reference to the table view's super view in the reloadSection and subsequent closures to avoid a retain cycle since the model object is a property of the super view.
