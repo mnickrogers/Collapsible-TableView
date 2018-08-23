@@ -15,6 +15,8 @@
 		1ED06629212F1D7000838B00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ED06627212F1D7000838B00 /* LaunchScreen.storyboard */; };
 		1ED06634212F1D7000838B00 /* CollapsibleTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED06633212F1D7000838B00 /* CollapsibleTableViewTests.swift */; };
 		1ED0663F212F1D7000838B00 /* CollapsibleTableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED0663E212F1D7000838B00 /* CollapsibleTableViewUITests.swift */; };
+		1ED0664E212F1DFE00838B00 /* CollapsibleHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED0664C212F1DFE00838B00 /* CollapsibleHeaderView.swift */; };
+		1ED0664F212F1DFE00838B00 /* CollapsibleTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED0664D212F1DFE00838B00 /* CollapsibleTableViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		1ED0663A212F1D7000838B00 /* CollapsibleTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollapsibleTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ED0663E212F1D7000838B00 /* CollapsibleTableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewUITests.swift; sourceTree = "<group>"; };
 		1ED06640212F1D7000838B00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ED0664C212F1DFE00838B00 /* CollapsibleHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsibleHeaderView.swift; sourceTree = "<group>"; };
+		1ED0664D212F1DFE00838B00 /* CollapsibleTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 		1ED0661A212F1D6D00838B00 /* CollapsibleTableView */ = {
 			isa = PBXGroup;
 			children = (
+				1ED0664C212F1DFE00838B00 /* CollapsibleHeaderView.swift */,
+				1ED0664D212F1DFE00838B00 /* CollapsibleTableViewModel.swift */,
 				1ED0661B212F1D6D00838B00 /* AppDelegate.swift */,
 				1ED0661D212F1D6D00838B00 /* ViewController.swift */,
 				1ED0661F212F1D6D00838B00 /* Main.storyboard */,
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ED0664E212F1DFE00838B00 /* CollapsibleHeaderView.swift in Sources */,
 				1ED06624212F1D6D00838B00 /* CollapsibleTableView.xcdatamodeld in Sources */,
 				1ED0661E212F1D6D00838B00 /* ViewController.swift in Sources */,
+				1ED0664F212F1DFE00838B00 /* CollapsibleTableViewModel.swift in Sources */,
 				1ED0661C212F1D6D00838B00 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
