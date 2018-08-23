@@ -12,6 +12,7 @@ import UIKit
 class CollapsibleTableViewModel: NSObject
 {
     var reloadSection: ((_ section: Int) -> Void)?
+    var sectionRowData = [Int : [Any]]()
     
     private var collapsedSections = [Int : Bool]()
     
@@ -29,12 +30,12 @@ extension CollapsibleTableViewModel: UITableViewDataSource
         {
             return 0
         }
-        return 2
+        return sectionRowData[section]?.count ?? 0
     }
     
     func numberOfSections(in tableView: UITableView) -> Int
     {
-        return 2
+        return sectionRowData.count
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat
@@ -48,7 +49,7 @@ extension CollapsibleTableViewModel: UITableViewDataSource
             else { return UIView() }
         
         header.isCollapsed = collapsedSections[section] ?? false
-        header.backgroundView?.backgroundColor = UIColor.lightGray
+        header.backgroundView?.backgroundColor = UIColor.red
         header.section = section
         header.delegate = self
         
