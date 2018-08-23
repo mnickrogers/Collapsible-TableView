@@ -48,7 +48,7 @@ extension CollapsibleTableViewModel: UITableViewDataSource
             else { return UIView() }
         
         header.isCollapsed = collapsedSections[section] ?? false
-        header.backgroundView?.backgroundColor = UIColor.lightText
+        header.backgroundView?.backgroundColor = UIColor.lightGray
         header.section = section
         header.delegate = self
         
